@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Product list with cart</title>
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="(https://fonts.google.com/specimen/Red+Hat+Text)">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1 style="padding-left:70px; font-weight: bold; font-size: 42px;"> Desserts </h1>
+  <div class="contener">
+
+    <div class="card1">
+      <img src="assets/images/image-waffle-desktop.jpg" alt="">
+      <p class="par-img"> Waffle </p>
+      <h2> Waffle with Berries </h2>
+      <p class="par-mony"> $6.50 </p>
+
+      <button class="add-to-cart">
+        <img src="assets/images/icon-add-to-cart.svg" alt="" class="img-card"> Add to Cart
+      </button>
+    </div>
+
+    <div class="card2">
+      <img src="assets/images/image-creme-brulee-desktop.jpg" alt="">
+      <p class="par-img"> Crème Brûlée </p>
+      <h2> Vanilla Bean Crème Brûlée </h2>
+      <p class="par-mony"> $7.00 </p>
+
+
+
+      <button class="add-to-cart">
+        <img src="assets/images/icon-add-to-cart.svg" alt="" class="img-card">
+        Add to Cart
+      </button>
+
+    </div>
+
+    <div class="card3">
+      <img src="assets/images/image-macaron-desktop.jpg" alt="">
+      <p class="par-img"> Macaron</p>
+      <h2> Macaron Mix of Five </h2>
+      <p class="par-mony"> $8.00 </p>
+
+
+      <button class="add-to-cart">
+        <img src="assets/images/icon-add-to-cart.svg" alt="" class="img-card">
+        Add to Cart
+      </button>
+
+    </div>
+
+    <div>
+      <img src="assets/images/image-tiramisu-desktop.jpg" alt="">
+      <p class="par-img"> Blueberry Muffin</p>
+      <h2> Blueberry Muffin </h2>
+      <p class="par-mony"> $5.50 </p>
+
+
+      <button class="add-to-cart">
+        <img src="assets/images/icon-add-to-cart.svg" alt="" class="img-card">
+        Add to Cart
+      </button>
+    </div>
+
+    <div>
+      <img src="assets/images/image-baklava-desktop.jpg" alt="">
+      <p class="par-img"> Baklava </p>
+      <h2> Pistachio Baklava </h2>
+      <p class="par-mony"> $4.00 </p>
+
+
+      <button class="add-to-cart">
+        <img src="assets/images/icon-add-to-cart.svg" alt="" class="img-card">
+        Add to Cart
+      </button>
+
+    </div>
+
+    <div>
+      <img src="assets/images/image-meringue-desktop.jpg" alt="">
+      <p class="par-img"> Pie </p>
+      <h2> Lemon Meringue Pie </h2>
+      <p class="par-mony"> $5.00 </p>
+
+      <button class="add-to-cart">
+        <img src="assets/images/icon-add-to-cart.svg" alt="" class="img-card">
+        Add to Cart
+      </button>
+    </div>
+
+    <div>
+      <img src="assets/images/image-cake-desktop.jpg" alt="">
+      <p class="par-img"> Cake </p>
+      <h2> Red Velvet Cake </h2>
+      <p class="par-mony"> $4.50 </p>
+
+      <button class="add-to-cart">
+        <img src="assets/images/icon-add-to-cart.svg" alt="" class="img-card">
+        Add to Cart
+      </button>
+    </div>
+
+    <div>
+      <img src="assets/images/image-brownie-desktop.jpg" alt="">
+      <p class="par-img"> Brownie </p>
+      <h2> Salted Caramel Brownie </h2>
+      <p class="par-mony"> $4.50 </p>
+
+      <button class="add-to-cart">
+        <img src="assets/images/icon-add-to-cart.svg" alt="" class="img-card">
+        Add to Cart
+      </button>
+    </div>
+
+    <div>
+      <img src="assets/images/image-panna-cotta-desktop.jpg" alt="">
+      <p class="par-img"> Panna Cotta </p>
+      <h2> Vanilla Panna Cotta </h2>
+      <p class="par-mony"> $6.50 </p>
+
+
+      <button class="add-to-cart">
+        <img src="assets/images/icon-add-to-cart.svg" alt="" class="img-card">
+        Add to Cart
+      </button>
+    </div>
+
+
+
+    <div class="overlay"></div>
+
+    <div class="order-summary">
+      <img src="assets/images/icon-order-confirmed.svg " alt="" class="img2">
+      <h2 style="font-size: 26px;font-weight: 800;margin: 0px;padding-left: 11px;">Order Confirmed</h2>
+      <p style="font-size: 11px; color: gray;position: relative;left: -98px;padding-left: 19px;"> We hope ypu enjoy your
+        food ! </p>
+      <ul id="order-items"></ul>
+      <button id="back-to-shop"> Start New Order </button>
+    </div>
+
+    <!--  -->
+
+    <div class="cake">
+      <h2 class="cake-top" style="position: absolute;top: 10px;left: 10px;display: block;margin: 0px;">Your Cart (0)
+      </h2>
+      <img src="assets/images/illustration-empty-cart.svg" class="cake-photo" alt="" style=" width: 45%;
+                border-top: 50px solid transparent; ">
+      <p id="empty-cart-message" class="hide">Your added items will appear here</p>
+      <ul id="cart-items"></ul>
+
+      <img src="assets/images/icon-carbon-neutral.svg" alt="" id="new-add-tree">
+      <p id="new-add"> This is <span>carboon-neutral</span> delivery </p>
+
+
+      <button id="confirm-order">Confirm Order</button>
+    </div>
+    <div class="cart-summary">
+    </div>
+
+
+  </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
